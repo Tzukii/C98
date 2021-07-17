@@ -1,0 +1,55 @@
+for open and read functions
+
+```python
+>>> f=open("test.txt")
+>>> f.read()
+'Test\nTest'
+```
+
+for reading a file line by line
+
+```python
+>>> f=open("test.txt")
+>>> fileLines=f.readlines()
+>>> for line in fileLines:
+...     print(line)
+...
+Test
+
+Test
+
+
+
+This is a test
+>>>
+
+```
+
+for reading reading words in a string with split function. By default, split uses spaces to split the string
+
+```python
+>>> introString = "this is an extremely long string that has a lot of words in it, such as this word and the next"
+>>> words = introString.split()
+>>> print(words)
+['this', 'is', 'an', 'extremely', 'long', 'string', 'that', 'has', 'a', 'lot', 'of', 'words', 'in', 'it,', 'such', 'as', 'this', 'word', 'and', 'the', 'next']
+```
+
+to split items using a separator, do as follows
+
+```python
+>>> introString = "this is an extremely, long string that has a lot of words in it, such as this word and the next"
+>>> words = introString.split(",")
+>>> print(words)
+['this is an extremely', ' long string that has a lot of words in it', ' such as this word and the next']
+```
+
+to define a function, do as follows
+
+```python
+>>> def greet(name):
+...     print("Hello, " + name + ". How are you today?")
+...
+>>> greet("Shivam")
+Hello, Shivam. How are you today?
+```
+
